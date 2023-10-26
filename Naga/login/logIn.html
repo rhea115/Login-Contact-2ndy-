@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="general.css">
+    
+    <title>Log In</title>
+</head>
+
+<style>
+
+.container{
+    height: 540px;
+    width: 900px;
+    display: flex;
+    box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.52);
+}
+
+.left-col{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 400px;
+}
+
+.left-col .text-con
+{
+    position: absolute;
+    color: rgb(243, 183, 124);
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 40px;
+    padding: 0 20px;
+}
+
+.left-col .text-con .back
+{
+    margin-bottom: 20px;
+}
+
+.left-col img
+{
+    filter: brightness(85%);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.center-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.center-right .head-con
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.center-right .head-con h1
+{
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 10px 0 0;
+}
+
+.center-right .right-col
+{
+    width: 100%;
+}
+
+form{
+    width: 100%;
+}
+
+.input-con .icon-con
+{
+    height: 20px;
+}
+
+.input-con .icon-con img{
+    height: 100%;
+    width: 100%;
+}
+
+.input-con{
+    padding: 15px 15px 8px;
+    width: 100%;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin-top: 30px;
+}
+
+.input-con input
+{
+    height: 100%;
+    border: none;
+    outline: none;
+    font-style: italic;
+}
+
+.forgot{
+    text-align: end;
+    color: rgb(139, 139, 139);
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.center-right .right-col form .submit-con
+{
+    margin-top: 20px;
+}
+
+.center-right .right-col form .submit
+{
+    padding: 12px 50px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    background: rgb(179, 144, 108);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.center-right .right-col form .submit:hover
+{
+    
+    opacity: 0.8;
+}
+
+.center-right .con
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-right .con hr
+{
+    width: 100%;
+}
+
+.center-right .con div
+{
+    position: absolute;
+    background-color: white;
+    color: rgb(128, 128, 128);
+    font-size: 15px;
+}
+
+.center-right .signUp
+{
+    padding: 12px 50px;
+    border-radius: 50px;
+    font-weight: 500;
+    border: 1px solid black;
+    background: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.center-right .signUp:hover
+{
+    background: rgba(211, 211, 211, 0.4);
+}
+
+
+</style>
+
+<body>
+    
+    <div class="center">
+        <div class="container">
+            <div class="left-col">
+                <img src="book2.avif" alt="img">
+                <div class="text-con">
+                    <div class="back">Welcome Back!</div>
+                    <div>Experience another new world with us</div>
+                </div>
+            </div>
+
+            <div class="center-right">
+                <div class="right-col">
+                    <div class="head-con">
+                        <img src="user.png" alt="">
+                        <h1>User Login</h1>
+                    </div>
+    
+                    <form action="" method="post">
+                        <div style="display: flex; justify-content: center;">
+                            <div style="width: 60%;">
+                                <div class="input-con">
+                                    <div class="icon-con">
+                                        <img src="email.png" alt="">
+                                    </div>
+                                    <input type="email" placeholder="Enter Email" name="email" id="email">
+                                </div>
+            
+                                <div class="input-con">
+                                    <div class="icon-con">
+                                        <img src="lock.png" alt="">
+                                    </div>
+                                    <input type="email" placeholder="Enter Password" name="password" id="password">
+                                </div>
+                                <div class="forgot">Forgot password?</div>
+        
+                                <div class="center-right submit-con">
+                                    <button type="submit" class="submit">Log In</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="con">
+                        <hr>
+                        <div>OR</div>
+                    </div>
+
+                    <div class="center-right">
+                            <button class="signUp">Sign up</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

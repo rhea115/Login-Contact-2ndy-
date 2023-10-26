@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="general.css">
+    <title>Contact Us</title>
+</head>
+<style>
+    .container{
+    height: 540px;
+    width: 1200px;
+    display: flex;
+    box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.52);
+}
+
+.col{
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.left-col{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+}
+
+.left-col .text-con
+{
+    position: absolute;
+    color: rgb(223, 166, 96);
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 25px;
+    top: 10px;
+    left: 10px;
+    text-shadow: 4px 3px 5px rgba(0,0,0,0.5);
+}
+
+.left-col img
+{
+    filter: brightness(90%);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom center;
+}
+
+.center-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
+.left-col .cloud
+{
+    position: absolute;
+}
+
+.left-col .cloud .cloud-con
+{
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-col .cloud img
+{
+    filter: brightness(100%);
+    height: 100%;
+    width: 100%;
+}
+
+.contact-con
+{
+    margin-top: 50px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-con .flex
+{
+    display: flex;
+    height: 25px;
+    margin-top: 8px;
+}
+
+.contact-con .flex img
+{
+    object-fit: contain;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.contact-con .text
+{
+    color: rgb(87, 66, 46);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.center-right .right-col h1
+{
+    color: rgb(115, 85, 56);
+    font-weight: 500;
+    text-align: center;
+    font-size: 32px;
+}
+
+.right-col
+{
+    width: 100%;
+}
+.center-right{
+    margin-top: 25px;
+}
+
+form .input-con
+{
+    width: 70%;
+}
+
+form .input-con label
+{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+form .input-con input, form .input-con textarea
+{
+    width: 100%;
+    margin-top: 4px;
+    padding: 12px;
+    border: 1px solid lightslategray;
+    border-radius: 4px;
+}
+
+form .center
+{
+    margin-top: 20px;
+}
+
+form .center button
+{
+    padding: 12px 40px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    background: rgb(179, 144, 108);
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 16px;
+    
+}
+
+form .center button:hover
+{
+    opacity: 0.8;
+}
+
+.loc
+{
+    height: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.loc img
+{
+    object-fit: contain;
+    height: 100%;
+}
+</style>
+
+
+
+<body>
+
+    
+    <div class="center col">
+        <div class="container">
+            <div class="left-col">
+                <img src="book3.jpeg" alt="img">
+                <div class="text-con">
+                    <div class="back">BOOKWORM</div>
+                    <div>SHACK</div>
+                </div>
+
+                <div class="cloud">
+                    <div class="cloud-con">
+                        <img src="cloud-computing.png" alt="">
+                        <div class="contact-con">
+                            <div>
+                                <div class="text">Speak to us.</div>
+                                <div class="text">How can we help?</div>
+                            </div>
+
+                            <div>
+                                <div style="text-align: center;">Contact us thru: </div>
+                                <div class="flex">
+                                    <img src="facebook-logo.png" alt="">
+                                    <img src="instagram.png" alt="">
+                                    <img src="gmail.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center-right">
+                <div class="right-col">
+                    <h1>Contact Us</h1>
+                    <form action="" method="post">
+                        <div class="center">
+                            <div class="input-con">
+                                <label for="name">Full Name: </label>
+                                <input type="text" name="name" id="name" placeholder="Enter Full Name">
+                            </div>
+                        </div>
+
+                        <div class="center">
+                            <div class="input-con">
+                                <label for="email">Email: </label>
+                                <input type="email" name="email" id="email" placeholder="Enter E-mail">
+                            </div>
+                        </div>
+
+                        <div class="center">
+                            <div class="input-con">
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message..." maxlength="500"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="center">
+                            <button type="submit">Contact Us</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="loc">
+            <img src="location-pin.png" alt="">
+            <div>Metro Manila, Philippines</div>
+        </div>
+    </div>
+
+    
+
+</body> 
+</html>
